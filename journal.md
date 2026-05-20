@@ -42,3 +42,30 @@
 
 ### Time spent
 - ~2h
+
+## Day 3 — 2026-05-20
+
+### Done
+- Installed AD DS role on DC01 (no reboot needed for install itself)
+- Promoted DC01 as first DC of new forest acme.local
+- Forest/Domain functional level: WinThreshold (Server 2016 = highest available)
+- NetBIOS name: ACME
+- Integrated DNS deployed during promotion
+- DSRM password stored separately in password manager (DC01-DSRM)
+- Post-promotion validation: Get-AD* OK, dcdiag /v clean (FrsEvent ignored),
+  DNS SRV records present, repadmin shows no failures (single DC env)
+- Snapshot ROLES-INSTALLED taken
+- 3 screenshots captured for portfolio
+
+### Issues encountered
+- None blocking. Warnings about NT4 cryptography compatibility during promotion
+  are normal Microsoft notices, not errors.
+
+### Concepts internalized
+- Forest > Domain > DC hierarchy
+- DSRM password is separate from Administrator and used only for AD recovery
+- WinThreshold functional level explained
+- DNS is AD's nervous system — validated SRV records as part of health check
+
+### Time spent
+- ~2h
