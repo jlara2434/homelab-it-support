@@ -69,3 +69,34 @@
 
 ### Time spent
 - ~2h
+
+## Day 4 — 2026-05-21
+
+### Done
+- Verified DC health post-snapshot (5 core services running, dcdiag OK)
+- Installed and configured DHCP role on DC01
+- AUTHORIZED DHCP server in AD (the step most juniors forget)
+- Created scope Acme-LAN-50 (192.168.50.100-200), 8-day lease
+- Configured scope options 3 (gateway), 6 (internal DNS), 15 (domain suffix)
+- Validated: server authorized, scope active, 101 free addresses
+- Created OU structure: Acme > Usuarios/Grupos/Equipos/Servidores (deletion-protected)
+- Created RRHH global security group
+- Created first user laura.garcia, added to RRHH, forced password change at logon
+- Snapshot DOMAIN-READY taken
+
+### Issues encountered
+- None.
+
+### Concepts internalized
+- Rogue DHCP and why AD requires DHCP authorization
+- DHCP scope design: reserve space for statics, keep DC outside the range
+- The 3 standard scope options (3/6/15) and why DNS must be internal
+- OUs vs default Users container; GPOs apply at OU level
+- Group scope/category; AGDLP nesting best practice
+- ProtectedFromAccidentalDeletion as operational safeguard
+
+### Time spent
+- ~1h50
+
+### Next (Saturday)
+- Deploy CLIENT01 (Windows 10), join to domain, verify DHCP lease end-to-end
