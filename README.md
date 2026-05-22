@@ -31,6 +31,17 @@ exact commands and resolution.
 
 See [`04-scripts/`](04-scripts/) — PowerShell (Windows) and Bash (Linux) automation.
 
+## Current status
+
+| Component | State |
+|-----------|-------|
+| DC01 — AD DS, DNS, DHCP | ✅ Operational |
+| Active Directory structure (OUs, first user/group) | ✅ Created |
+| CLIENT01 — Windows 10 domain join | ⏳ In progress |
+| FILE01 — file server + GPOs | 🔜 Planned |
+| UBUNTU01 — Linux services | 🔜 Planned |
+| Incident playbooks | 🔜 Planned |
+
 ## Repository structure
 
 > 🚧 Actively developed lab — updated weekly.
