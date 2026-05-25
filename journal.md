@@ -100,3 +100,24 @@
 
 ### Next (Saturday)
 - Deploy CLIENT01 (Windows 10), join to domain, verify DHCP lease end-to-end
+
+## Saturday (Week 1 close) — 2026-05-25
+
+### Done
+- Deployed CLIENT01 (Windows 10 Enterprise) on VMnet10
+- Verified DHCP lease end-to-end (client received IP/GW/DNS/suffix from DC01)
+- Joined CLIENT01 to acme.local, moved to OU=Equipos
+- Validated secure channel and Kerberos logon (laura.garcia)
+- Documented 2 incidents as tickets: INC-001 (DNS), INC-002 (IP/DHCP)
+- Snapshots: EMPTY-VM, DOMAIN-JOINED, PRE-INCIDENT (CLIENT01); WITH-CLIENT (DC01)
+
+### Concepts internalized
+- Domain join internals (computer object, secure channel, SRV-based DC location)
+- Diagnostic logic: ping by IP vs by name isolates connectivity vs DNS
+- Why domain clients must use internal DNS
+- Breaking-on-purpose as diagnostic training
+
+### Time spent
+- ~4h
+
+### Week 1 COMPLETE: full functional domain with client, DHCP, DNS, 2 incidents

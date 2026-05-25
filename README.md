@@ -10,7 +10,7 @@ in a production-like environment.
 
 - **Hypervisor:** VMware Workstation Pro 17
 - **Servers:** Windows Server 2022, Ubuntu Server 22.04 LTS
-- **Client:** Windows 10 Enterprise
+- **Client:** Windows 11 Enterprise
 - **Core services:** Active Directory Domain Services, DNS, DHCP, File Server, GPOs
 - **Differentiation layer:** PowerShell automation, basic cybersecurity hardening, ticketing simulation
 
